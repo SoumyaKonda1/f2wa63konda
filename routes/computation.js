@@ -9,7 +9,7 @@ router.get('/', function (req, res, next) {
     if (x == undefined || x == null) {
         x = rdm_value;
     }
-    res.render('computation', { computation_values: `Math.cbrt(${x}) is ${Math.cbrt(x)}` });
+    res.render('computation', { computation_values: `Math.cbrt(${x}) is ${Math.cbrt(x)} , \n Math.atanh(${x}) is ${Math.atanh(x)}` });
     res.end();
 });
 
